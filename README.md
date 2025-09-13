@@ -59,3 +59,13 @@ You will see the Swayatt logo displayed in your browser.
 - **Port**: 3000
 - **Endpoint**: GET `/` - serves the logo image
 - **File served**: `logoswayatt.png`
+
+### Monitoring & Logging
+
+- **Docker Logs (Quick Monitoring)**
+  SSH into EC2 and run:
+  docker logs -f devops-task
+
+- **CloudWatch Logs (Production Monitoring)**
+  AWS Console → CloudWatch → Log Groups → /devops-task-app/logs
+  Each container has its own log stream.
